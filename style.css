@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: runningDiv 3s infinite;
+}
+
+
+@keyframes boxloader {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes runningDiv {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 395px;
+    }
+    50% {
+        left: 395px;
+        top: 395px;
+    }
+    75% {
+        top: 395px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
